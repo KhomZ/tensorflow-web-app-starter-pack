@@ -6,18 +6,21 @@ It automatically generates SwaggeredUI for APIs.
 
 Upload any of your preferred photo and try it at 
 
-### How to run?
+## How to run?
 **uvicorn imageRecognitionAPI.server.main:app**
 
-### Screenshots:
-### SwaggerUI
+## Screenshots:
+## SwaggerUI
 ![SwaggerUI](imageRecognitionAPI/screenshots/localhost-homepage.jpg)
 
-### Responses
+## Responses
+### Response of predict image api:
 ![predictAPI](imageRecognitionAPI/screenshots/predict-api1.jpg)
 
 ![predictAPI](imageRecognitionAPI/screenshots/predict-api2.jpg)
 
+
+### Response of symptom-check api:
 ![symptom-check](imageRecognitionAPI/screenshots/1.jpg)
 
 ![symptom-check](imageRecognitionAPI/screenshots/2.jpg)
