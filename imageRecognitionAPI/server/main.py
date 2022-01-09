@@ -7,7 +7,7 @@ from imageRecognitionAPI.schema import Symptom
 from imageRecognitionAPI.prediction import symptom_check
 
 app_desc = """<h2>Try my Image Prediction app by uploading any image with `predict/image`</h2>
-<h2>Also, Try Covid Symptoms Checker `api/covid-symptom-check`.</h2> 
+<h2>Also, Try Covid Symptoms Checker `api/covid-symptom-check`</h2> 
 <h2>Note that it's just a learning app demo</h2>
 <a href="https://github.com/KhomZ">Contact Me</a> 
 <p><br>Developer: <a href="https://khomz.github.io/">Khom Raj Thapa Magar</a></p>"""
