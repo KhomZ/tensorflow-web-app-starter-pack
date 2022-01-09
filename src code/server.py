@@ -1,8 +1,10 @@
 from fastapi import FastAPI
-import uvicorn
-# Uvicorn is a lightning-fast ASGI server implementation, using uvloop and httptools.
+from fastapi import UploadFile, File  # for file upload
+import uvicorn  # Uvicorn is a lightning-fast ASGI server implementation, using uvloop and httptools.
+from prediction import read_image, preprocess
 
 app = FastAPI()
+
 
 @app.get('/index')
 # get request api
@@ -10,6 +12,16 @@ app = FastAPI()
 def hello_ikhomkodes(name: str):
     # return "Hello ikhomkodes!"
     return f"Hello {name}!"
+
+
+# image classification api
+@app.post('/api/predict')
+def predict_image(file: UploadFile = File(...)):
+    # Read the file uploaded by the user
+    image = read_image(file)
+    # after doing preprocessing
+    image = preprocess(image)
+    # make prediction
 
 
 if __name__ == "__main__":
