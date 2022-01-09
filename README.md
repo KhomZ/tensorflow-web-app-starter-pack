@@ -7,7 +7,9 @@ It automatically generates SwaggeredUI for APIs.
 Upload any of your preferred photo and try it at 
 
 ## How to run?
-**uvicorn imageRecognitionAPI.server.main:app**
+```
+uvicorn imageRecognitionAPI.server.main:app
+```
 
 ## Screenshots:
 ## SwaggerUI
